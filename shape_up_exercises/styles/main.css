@@ -1,0 +1,61 @@
+/* Created by Cindy Ohara
+    CIS 148
+    October 1, 2024 */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+header img {
+    float:left;
+}
+
+header h1 {
+    font-size: 220%;
+    text-indent: 30px;
+    color: steelblue;
+    font-style: italic;
+    text-shadow: 3px 3px steelblue;
+}
+
+header h3 {
+    text-indent: 30px;
+    font-size: 130%;
+}
+
+section {
+    clear: left
+}
+section h2 {
+    text-indent: 0;
+    font-size: 140%;
+}
+div h2{
+    font-size: 130%;
+
+}
+h3 a{
+    color: maroon;
+    font-size: 90%;
+    }       
+a:hover, a:focus {
+    color: steelblue; 
+}
+
+aside ul{
+    font-weight: bold;
+    font-size: 90%;
+    line-height: 140%;
+    a:hover, a:focus {
+        color: maroon;
+    }
+}
+li a{
+    color:steelblue;
+}
+
+footer p{
+    font-size: smaller;
+    text-align: center;
+}
