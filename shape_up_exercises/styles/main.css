@@ -1,16 +1,31 @@
 /* Created by Cindy Ohara
     CIS 148
-    October 1, 2024 */
+    October 1, 2024 
+    Revised October 9, 2024*/
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
+    width: 900px;
+    margin: 0 auto 0;
+    padding-top: .5em;
+    border: steelblue;
+    box-shadow: 0 10px 6px 6px black;
 }
-
+header {
+    
+    border-bottom: 3px solid steelblue;
+    background-image: 
+        linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+}
+main {
+    padding-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
 header img {
     float:left;
 }
-
 header h1 {
     font-size: 220%;
     text-indent: 30px;
@@ -18,44 +33,46 @@ header h1 {
     font-style: italic;
     text-shadow: 3px 3px steelblue;
 }
-
 header h3 {
     text-indent: 30px;
-    font-size: 130%;
+    font-size: 140%;
+    padding-bottom: 1em;
 }
-
 section {
     clear: left
 }
 section h2 {
     text-indent: 0;
-    font-size: 140%;
+    font-size: 150%;
 }
 div h2{
-    font-size: 130%;
-
+    font-size: 150%;
+    padding: 0;
+   
 }
 h3 a{
     color: maroon;
     font-size: 90%;
-    }       
-a:hover, a:focus {
+}       
+div a:hover, a:focus {
     color: steelblue; 
 }
-
 aside ul{
     font-weight: bold;
     font-size: 90%;
-    line-height: 140%;
-    a:hover, a:focus {
-        color: maroon;
-    }
+    line-height: 2em;
+}
+a:hover, a:focus {
+    color: maroon;
 }
 li a{
     color:steelblue;
 }
-
 footer p{
     font-size: smaller;
     text-align: center;
+    background-color: steelblue;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
