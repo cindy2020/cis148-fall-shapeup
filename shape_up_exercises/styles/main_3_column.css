@@ -1,17 +1,18 @@
 /* Created by Cindy Ohara
     CIS 148
     October 1, 2024 
-    Revised October 9, 2024
-    Revised October 16, 2024*/
+    Revised October 9, 2024*/
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 900px;
+    width: 1200px;
+    /*height: 985px;*/
     margin: 0 auto 0;
     padding-top: .5em;
     border: steelblue;
     box-shadow: 0 10px 6px 6px black;
+    
 }
 header {
     
@@ -23,11 +24,11 @@ main {
     padding-bottom: 1em;
     margin-left: 2em;
     margin-right: 2em;
+
  }
-aside {
+#sidebar {
     float: left;
 }
-
 header img {
     float:left;
 }
@@ -44,8 +45,8 @@ header h3 {
     padding-bottom: 1em;
 }
 section {
-   width: 550px; 
-   padding-left: 17.5em;
+   width: 500px; 
+   float: left;
 }
 section h2 {
     text-indent: 0;
@@ -54,7 +55,6 @@ section h2 {
 div h2{
     font-size: 150%;
     padding: 0;
-   
 }
 h3 a{
     color: maroon;
@@ -66,11 +66,10 @@ div a:hover, a:focus {
 aside h2 {
     font-size: 130%;
     color: maroon;
-    line-height: 0;
+    line-height: 1em;
     padding-bottom: 0;
 }
 aside ul{
-    float: left;
     font-weight: bold;
     font-size: 90%;
     line-height: 2em;
@@ -81,14 +80,18 @@ a:hover, a:focus {
 }
 li a{
     color:steelblue;
+    font-size: 110%;
+}
+#column3 {
+    width: 300px;
+    float: right;
 }
 footer p{
-    clear: left;
+    clear: both;
     font-size: smaller;
     text-align: center;
     background-color: steelblue;
     color: white;
     padding-top: 1em;
     padding-bottom: 1em;
-
 }
