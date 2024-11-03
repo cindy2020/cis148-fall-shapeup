@@ -1,15 +1,17 @@
-/* Created by Cindy Ohara
+/*  Edited by Cindy Ohara
     CIS 148
     October 1, 2024 
     Revised October 9, 2024
     Revised October 16, 2024
-    Revised October 24, 2024*/
+    Revised October 24, 2024
+    Revised November 1, 2024*/
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 900px;
-    margin: 0 auto 0;
+    max-width: 1024px;
+    width: 95%;
+    margin: 0;
     padding-top: .5em;
     border: 3px solid steelblue;
     box-shadow: 0 10px 6px 6px black;
@@ -32,26 +34,35 @@ aside {
 
 header img {
     float:left;
+    min-width: 70px;
+    max-width: 140px;
+    padding-left: 7em;
+
 }
 header h1 {
     font-size: 220%;
-    text-indent: 30px;
+    /*text-indent: 5em;*/
+    text-align: center;
     color: steelblue;
     font-style: italic;
     text-shadow: 3px 3px steelblue;
+    padding-right: 3em;
 }
 header h3 {
-    text-indent: 30px;
+    /*text-indent: 30px;*/
+    text-align: center;
     font-size: 140%;
     padding-bottom: 1em;
+    padding-right: 3em;
 }
 #nav_menu ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    padding 1em 0;
     text-align: center;
     position: relative;
+    width: 100%;
+    padding-right: 2em;
 }
 #nav_menu ul li {
     float: left;
@@ -128,9 +139,8 @@ aside ul{
     font-weight: bold;
     font-size: 100%;
     line-height: 2em;
-    width: 245px;
+    width: 100%;
     padding: .5em;
-    
 }
 a:hover, a:focus {
     color: maroon;
@@ -139,6 +149,84 @@ li a{
     color:steelblue;
     text-decoration: none;
 }
+#mobile_menu {
+    display: none;
+}
+/* For screens up to 900px width*/
+@media only screen and (max-width: 900px) {
+    body {
+        font-size: 90%;
+        box-shadow: none;
+    }
+}
+/* For screens up to 767px width*/
+@media only screen and (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+   #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: steelblue !important;
+        padding: 3px;
+    }
+    #mobile_menu ul, #mobile_menu ul a {
+        background-color: steelblue;
+    }
+    a:hover, a:focus {
+        color: lightsteelblue;
+    }
+    h1 {
+        font-size: 200%;
+    }
+    aside {
+        padding: 0;
+    }
+    aside ul {
+        padding-left: 1em;
+        width: 100%;
+    }
+    section {
+        padding: 0;
+        margin: 0;
+        width: 90%
+    }
+    section h2 {
+        padding-top: 0;
+    }
+    main {
+        margin: 0;
+    }
+}   
+/* For screens up to 479px width*/
+@media only screen and (max-width: 479px) {
+    header h1 {
+        font-size: 150%;
+        text-shadow: 1px 1px steelblue;
+    }
+    header h3 {
+        font-size: 125%;
+    }
+    header img {
+        float: left;
+        margin: 0;
+        padding-left: 1em;
+    }
+    section h2 {
+        font-size: 125%;
+    }
+    section h3 {
+        font-size: 110%;
+    }
+    section p {
+        font-size: 100%;
+    }
+    aside ul {
+        padding-left: 1em;
+        width: 100%;
+    }
+}
 footer p{
     clear: left;
     font-size: 100%;
@@ -146,6 +234,6 @@ footer p{
     vertical-align: middle;
     background-color: steelblue;
     color: white;
-    padding: 20px;
+    padding: 10px;
     margin: 0;
 }

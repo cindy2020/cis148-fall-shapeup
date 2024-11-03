@@ -4,6 +4,7 @@
 	CIS 148
 	September 25, 2024; revised October 1, 2024
 	Revised October 16, 2024; Revised October 24, 2024
+	Revised November 1, 2024
 -->
 
 <html lang="en">
@@ -11,7 +12,15 @@
 		<meta charset="utf-8" />
 		<title>Shape Up!</title>
 		<link rel="icon" href="images/favicon.ico">
-		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/main_rwd.css">
+		<link rel="stylesheet" href="styles/slicknav.css">
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+			});
+		</script>
 	</head>
 
 	<body>
@@ -22,6 +31,7 @@
 			<h1>Shape Up!</h1>
 			<h3>Find the best fit for you</h3>
 		</header>
+		<nav id="mobile_menu"></nav>
 		<nav id="nav_menu">
 			<ul>
 				<li><a  href="index.html"><strong>Home</strong></a></li>
@@ -46,16 +56,6 @@
 			</ul>
 		</nav> 
 		<main>
-			<aside>
-				<h2>Additional resources</h2>
-				<ul>
-					<li><a <strong>Physical Activity and Health</strong></a></li>
-					<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20546848"><strong>Stretching exercises</strong></a></li>
-					<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046031"><strong>Strength training</strong></a></li>
-					<li><a href="https://health.ucdavis.edu/blog/cultivating-health/simple-8-week-exercise-plan-for-a-healthy-heart/2024/02"><strong>Cardiovascular training</strong></a></li>
-					<li><a href="https://www.self.com/gallery/power-yoga-workout">Yoga workout</a></li>
-				</ul>
-			</aside>
 			<section>
 				<h2>Get ready to Shape Up!</h2>
 				<p>How many times have you started a new workout routine or diet? And how many times has it failed to give you the results you want? Now, with the help of this site, you can learn about the exercises and diet that work best for you. We offer personalized programs as well as access to several health and dieting tools. So don't wait! Get started looking and feeling better today.</p>
@@ -76,6 +76,16 @@
 					
 				</div>	
 			</section>
+			<aside>
+				<h2>Additional resources</h2>
+				<ul>
+					<li><a><strong>Physical Activity and Health</strong></a></li>
+					<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20546848"><strong>Stretching exercises</strong></a></li>
+					<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046031"><strong>Strength training</strong></a></li>
+					<li><a href="https://health.ucdavis.edu/blog/cultivating-health/simple-8-week-exercise-plan-for-a-healthy-heart/2024/02"><strong>Cardiovascular training</strong></a></li>
+					<li><a href="https://www.self.com/gallery/power-yoga-workout">Yoga workout</a></li>
+				</ul>
+			</aside>
 		</main>
 		
 		<footer>
