@@ -4,12 +4,75 @@
 <head>
 	<meta charset="utf-8">
 	<title>Shape Up! | Stress</title>
+    <link rel="icon" href="/images/favicon.ico">
+		<link rel="stylesheet" href="stress.css">
+		<link rel="stylesheet" href="../styles/slicknav.css">
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<script src="../js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+			});
+		</script>
 </head>
 
 <body>
+    <header>
+        <a href="../index.html" title="Go to Home Page">
+            <img src="../images/shape_up_logo.png" alt="Shape Up logo">
+        </a>
+        <h1>Shape Up!</h1>
+        <h3>Find the best fit for you</h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+        <ul>
+            <li><a  href="index.html"><strong>Home</strong></a></li>
+            <li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046031"><strong>Strength training</strong></a></li>
+            <li><a href="https://health.ucdavis.edu/blog/cultivating-health/simple-8-week-exercise-plan-for-a-healthy-heart/2024/02"><strong>Cardio Exercises</strong></a></li>
+            <li><a href="index.html"class="current"><strong>Stress Relief</strong></a></li>
+            <li class="lastitem"><a href="index.html"><strong>Healthy Diets</strong></a></li>	
+        </ul>
+    </nav>
     <main>
-        <h1>Stress Relief</h1>
-        <h2>Under Construction</h2>
-	</main>
+        
+        <section>
+            <h2>Stress Relief</h2>
+            <p>
+                We all encounter stress at one time or another. So it's important to be able to recognize stress and learn how to deal with it.
+            </p>
+            <h3>What is stress?</h3>
+            <p>
+                Stress is the feeling that people have when they are overloaded and struggling to cope with demands. Anything that poses a real or perceived challenge or threat to a person's well-being can cause stress.
+            </p>
+            <p>
+                Stress can also be a motivator. It can be essential to survival. The &quot;fight-or-flight&quot; mechanism helps us know when and how to respond to danger. But when this mechanism is triggered too easily, or when there are too many stressors at one time, it can become harmful to a person's mental and physical health.
+            </p>
+
+            <h3>How to manage your stress</h3>
+
+            To help manage stress, try the following:
+            <ul>
+                <li>Take a break from what you're doing</li>
+                <li>Exercise on a regular basis</li>
+                <li>Take time to smile and laugh</li>
+                <li>Get support from family and friends</li>
+                <li>Meditate</li>
+            </ul>
+        </section>
+        <aside>
+            <h2>Additional resources</h2>
+            <ul>
+                <li><a><strong>Physical Activity and Health</strong></a></li>
+                <li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20546848"><strong>Stretching exercises</strong></a></li>
+                <li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046031"><strong>Strength training</strong></a></li>
+                <li><a href="https://health.ucdavis.edu/blog/cultivating-health/simple-8-week-exercise-plan-for-a-healthy-heart/2024/02"><strong>Cardiovascular training</strong></a></li>
+                <li><a href="https://www.self.com/gallery/power-yoga-workout">Yoga workout</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2022 Shape Up!</p>
+    </footer>
 </body>
 </html>
