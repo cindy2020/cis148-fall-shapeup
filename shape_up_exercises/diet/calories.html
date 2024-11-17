@@ -1,15 +1,211 @@
 <!DOCTYPE html>
-
+<!-- Created by Cindy Ohara
+     CIS 148
+	 Created November 15, 2024
+-->
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Shape Up! | Calorie Counter</title>
+	<link rel="icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../styles/calories.css">
 </head>
 
 <body>
+	<header>
+		<a href="index.html" title="Go to Home Page">
+			<img src="../images/shape_up_logo.png" alt="Shape Up logo"></a>
+		<h1>Shape Up!</h1>
+		<h3>Find the best fit for you</h3>
+	</header>
+	<nav id="nav_menu">
+		<ul>
+			<li><a  href="../index.html"><strong>Home</strong></a></li>
+			<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046031"><strong>Strength training</strong></a></li>
+			<li><a href="https://health.ucdavis.edu/blog/cultivating-health/simple-8-week-exercise-plan-for-a-healthy-heart/2024/02"><strong>Cardio Exercises</strong></a></li>
+			<li><a href="../stress/index.html"><strong>Stress Relief</strong></a>
+				<ul>
+					<li><a href="../stress/index.html"><strong>What is Stress?</strong></a></li>
+					<li><a href="../stress/tips.html"><strong>5 Helpful Tips</strong></a></li>
+					<li><a href="../stress/meditate.html"><strong>Meditation</strong></a></li>
+					<li><a href="../stress/vipassana.html"><strong>Vipassana</strong></a></li>
+				</ul>
+			</li>
+			<li class="lastitem"><a href="calories.html" class="current"><strong>Healthy Diets</strong></a>
+				<ul>
+					<li><a href="index.html"><strong>Why a Healthy Diet?</strong></a></li>
+					<li><a href="meals.html"><strong>Plan Your Meals</strong></a></li>
+					<li><a href="calories.html"class="current"><strong>Count Your Calories</strong></a></li>
+					<li><a href="bmi.html"><strong>Calculate Your BMI</strong></a></li>
+				</ul>
+			</li>	
+		</ul>
+	</nav> 
 	<main>
-	    <h1>Calorie Counter</h1>
-		<h2>Under Construction</h2>	      
+		<section>
+			<figure>
+				<figcaption>Calorie Counter</figcaption>
+				<table>
+					<thead>
+						<tr>
+							<th class="left">Category</th>		
+							<th class="left">Food</th>
+							<th id="left1">Serving size</th>
+							<th id="right">Calories</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="category" rowspan="3">Beef</td>	
+							<td class="item">Frankfurter, Beef</td>
+							<td>1 each</td>		
+							<td class="cal">184</td>
+						</tr>		
+						<tr>
+							<td class="item">Ground Beef</td>
+							<td>14 oz</td>		
+							<td class="cal">264</td>
+						</tr>
+						<tr>
+							<td class="item">T-Bone Steak</td>
+							<td>8 ounces</td>		
+							<td class="cal">402</td>
+						</tr>
+						<tr>
+							<td class="category" rowspan="3">Bread</td>	
+							<td class="item">Bagel, plain</td>
+							<td>1 bagel</td>		
+							<td class="cal">360</td>
+						</tr>		
+						<tr>
+							<td class="item">Bread, sliced</td>
+							<td>1 slice</td>		
+							<td class="cal">60 to 80</td>
+						</tr>
+						<tr>
+							<td class="item">English Muffin</td>
+							<td>1</td>		
+							<td class="cal">135</td>
+						</tr>
+						<tr>
+							<td class="category" rowspan="3">Cereal</td>	
+							<td class="item">Cheerios</td>
+							<td>1 cup</td>		
+							<td class="cal">110</td>
+						</tr>		
+						<tr>
+							<td class="item">Corn Flakes</td>
+							<td>1 cup</td>		
+							<td class="cal">100</td>
+						</tr>
+						<tr>
+							<td class="item">Oatmeal, quick</td>
+							<td>1 cup cooked</td>		
+							<td class="cal">145</td>
+						</tr>
+						<tr>
+							<td class="category" rowspan="4">Cheese</td>	
+							<td class="item">American</td>
+							<td>1 ounce</td>		
+							<td class="cal">106</td>
+						</tr>		
+						<tr>
+							<td class="item">Swisss</td>
+							<td>1 ounce</td>		
+							<td class="cal">100</td>
+						</tr>
+						<tr>
+							<td class="item">Cheddar</td>
+							<td>1 ounce</td>		
+							<td class="cal">114</td>
+						</tr>
+						<tr>
+							<td class="item">Cottage Cheese, regular</td>
+							<td>1/2 cup</td>		
+							<td class="cal">117</td>
+						</tr>
+						<tr>
+							<td class="category" rowspan="2">Fruit</td>	
+							<td class="item">Apple</td>
+							<td>1 medium</td>		
+							<td class="cal">80</td>
+						</tr>		
+						<tr>
+							<td class="item">Banana</td>
+							<td>1</td>		
+							<td class="cal">105</td>
+						</tr>
+						
+						<tr>
+							<td class="category" rowspan="3">Vegetables</td>	
+							<td class="item">Corn, fresh</td>
+							<td>1 medium ear</td>		
+							<td class="cal">88</td>
+						</tr>		
+						<tr>
+							<td class="item">Carrot, raw</td>
+							<td>1 medium</td>		
+							<td class="cal">25</td>
+						</tr>
+						<tr>
+							<td class="item">Celery</td>
+							<td>1 large stalk</td>		
+							<td class="cal">9</td>
+						</tr>
+						<tr>
+							<td class="category" rowspan="7">Miscellaneous</td>	
+							<td class="item">Milk, whole</td>
+							<td>1 cup</td>		
+							<td class="cal">157</td>
+						</tr>		
+						<tr>
+							<td class="item">Eggs</td>
+							<td>1</td>		
+							<td class="cal">70</td>
+						</tr>
+						<tr>
+							<td class="item">Peanut butter</td>
+							<td>2 tablespoons</td>		
+							<td class="cal">188</td>
+						</tr>
+						<tr>
+							<td class="item">Pasta</td>
+							<td>1/2 cup dry</td>		
+							<td class="cal">1200</td>
+						</tr>		
+						<tr>
+							<td class="item">Rice</td>
+							<td>1 cup cooked</td>		
+							<td class="cal">204</td>
+						</tr>
+						<tr>
+							<td class="item">Canned tuna, in water</td>
+							<td>2 ounces</td>		
+							<td class="cal">70</td>
+						</tr>
+						<tr>
+							<td class="item">Baked potato</td>
+							<td>1 medium</td>		
+							<td class="cal">130</td>
+						</tr>																				
+					</tbody>
+				</table>
+				<div>Note: Contact us to get a detailed list of food calories.</div>
+			</figure>
+		</section>
+		<aside>
+			<h2>Additional resources</h2>
+			<ul>
+				<li><a <strong>Physical Activity and Health</strong></a></li>
+				<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20546848"><strong>Stretching exercises</strong></a></li>
+				<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046031"><strong>Strength training</strong></a></li>
+				<li><a href="https://health.ucdavis.edu/blog/cultivating-health/simple-8-week-exercise-plan-for-a-healthy-heart/2024/02"><strong>Cardiovascular training</strong></a></li>
+				<li><a href="https://www.self.com/gallery/power-yoga-workout">Yoga workout</a></li>
+			</ul>
+		</aside>
     </main>
+	<footer>
+		<p>&copy; 2022 Shape Up!</p>
+	</footer>
 </body>
 </html>
