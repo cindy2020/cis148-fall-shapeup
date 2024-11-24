@@ -1,0 +1,218 @@
+/* Created by Cindy Ohara
+    CIS 148
+    November 22, 2024*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100;
+    width: 900px;
+    height: 1170px;
+    margin: 0 auto 0;
+    padding-top: .5em;
+    border: 3px solid steelblue;
+    box-shadow: 0 10px 6px 6px black;
+}
+header {
+    
+    border-bottom: 3px solid steelblue;
+    background-image: 
+        linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+}
+main {
+    padding: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 0;
+ }
+aside {
+    float: left;
+}
+
+header img {
+    float:left;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+header h1 {
+
+    text-indent: 30px;
+    color: steelblue;
+    font-style: italic;
+    text-shadow: 3px 3px steelblue;
+}
+header h3 {
+    text-indent: 30px;
+    font-size: 140%;
+    padding-bottom: 1em;
+}
+#nav_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding 1em 0;
+    text-align: center;
+    position: relative;
+}
+#nav_menu ul li {
+    float: left;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+   
+}
+#nav_menu ul ul li {
+    float: none;
+
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    display: block;
+    background-color: lightsteelblue;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu ul li a.current {
+    color: black;
+}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 180px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu > ul::after {
+    display: block;
+    clear: both;
+}
+
+section {
+   width: 65%;
+   float: right;
+
+}
+section h2 {
+    text-indent: 0;
+    font-family: "Fraunces", italic;
+    font-size: 170%;
+    padding-top: .3em;
+}
+section h3 {
+    font-size: 100%;
+    color: maroon;
+}
+section p {
+    font-size: 90%;
+}
+.photo {
+    float: right;
+    border: 1.5px solid black;
+    margin: .2em 0 1em .5em;
+}
+#fieldset1 label {
+    text-align: right;
+}
+#fieldset1 input {
+    width: 20em;
+    margin-bottom: .5em;
+
+}
+#full_name {
+    margin-left: 1.5em;
+    border: 2px solid maroon;
+}
+#email {
+    margin-left: 3em;
+    border: 2px solid maroon;
+}
+#height {
+    margin-left: 4em;
+}
+#weight {
+    margin-left: 4em;
+}
+#gender {
+    margin-left: 3em;
+    width: 21em;
+    margin-bottom: .5em;
+}
+#age {
+    margin-left: 5em;
+    width: 21em;
+}
+#life1 {
+    text-align: right;
+    line-height: 1em;
+}
+#explain {
+    width: 25em;
+    height: 5em;
+    margin-left: 3em;
+    margin-top: .5em;
+}
+#comments {
+    width: 25em;
+    height: 5em;
+    margin-top: .5em;
+    margin-left: 3em;
+}
+.diet {
+    text-align: justify;
+}
+#submit {
+    width: 12em;
+    margin-left: 3em;
+    margin-right: .5em;
+}
+#reset {
+    width: 12em;
+}
+h3 a{
+    color: maroon;
+    font-size: 90%;
+}       
+div a:hover, a:focus {
+    color: steelblue; 
+}
+aside h2 {
+    font-size: 130%;
+    color: maroon;
+    line-height: 0;
+    margin: 2em 0 0 0;
+    padding-bottom: 0;
+
+}
+
+aside ul{
+    float: left;
+    font-weight: bold;
+    font-size: 100%;
+    line-height: 2em;
+    width: 245px;
+    padding: .5em;
+    
+}
+a:hover, a:focus {
+    color: maroon;
+}
+li a{
+    color:steelblue;
+    text-decoration: none;
+}
+footer {
+    padding-top: 59em;
+}
+footer p{
+    clear: left;
+    font-size: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: steelblue;
+    color: white;
+    padding: 12px;
+    margin: 0;
+}
