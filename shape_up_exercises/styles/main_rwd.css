@@ -44,6 +44,14 @@ header h1 {
     font-style: italic;
     text-shadow: 3px 3px steelblue;
     padding-right: 3em;
+    animation: moveright 8s ease-in-out alternate;
+}
+@keyframes moveright {
+    from { margin-left: 3em;
+           color: steelblue;}
+    to   { margin-left: 20em;
+           color: maroon;
+           padding-right: 0em;}
 }
 header h3 {
     text-align: center;
@@ -58,7 +66,7 @@ header h3 {
     text-align: center;
     position: relative;
     width: 100%;
-    padding-right: 2em;
+    padding-right: 1em;
 }
 #nav_menu ul li {
     float: left;
@@ -84,7 +92,7 @@ header h3 {
     text-align: center;
     display: block;
     width: 180px;
-    padding: 1em .53em;
+    padding: 1em .42em;
     text-decoration: none;
     background-color: steelblue;
     color: white;
@@ -124,7 +132,22 @@ h3 a{
     font-size: 90%;
 }       
 div a:hover, a:focus {
-    color: steelblue; 
+    color: steelblue;
+
+}
+/*.dwg {
+    transition: 2s;
+}
+.dwg:hover {
+    transform: scale(2, 2);
+}*/
+
+.dwg {
+    width: 32px;
+    transition: width 2s ease;
+}
+.dwg:hover {
+    width: 64px;
 }
 aside h2 {
     font-size: 130%;
