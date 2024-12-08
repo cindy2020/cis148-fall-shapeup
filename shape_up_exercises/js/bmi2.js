@@ -10,6 +10,10 @@ var calculateBMI = function() {
     var bmi = (weight / height_squared) * 703;
     $("bmi_result").value = bmi.toFixed(2);             
 }
+
+document.getElementById("myform").reset("myform");
+
+
 window.onload = function() {
     $("calculate").onclick = calculateBMI;
 }

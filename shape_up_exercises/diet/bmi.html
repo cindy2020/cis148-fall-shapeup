@@ -4,12 +4,88 @@
 <head>
 	<meta charset="utf-8">
 	<title>Shape Up! | BMI</title>
+	<link rel="icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../styles/bmi.css">
+	<script src="../js/bmi.js"></script>
 </head>
 
 <body>
+	<header>
+		<a href="../index.html" title="Go to Home Page">
+			<img src="../images/shape_up_logo.png" alt="Shape Up logo">
+		</a>
+		<h1>Shape Up!</h1>
+		<h3>Find the best fit for you</h3>
+	</header>
+	<nav id="nav_menu">
+		<ul>
+			<li><a  href="../index.html"><strong>Home</strong></a></li>
+			<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046031"><strong>Strength training</strong></a></li>
+			<li><a href="https://health.ucdavis.edu/blog/cultivating-health/simple-8-week-exercise-plan-for-a-healthy-heart/2024/02"><strong>Cardio Exercises</strong></a></li>
+			<li><a href="../stress/index.html"><strong>Stress Relief</strong></a>
+				<ul>
+					<li><a href="../stress/index.html"><strong>What is Stress?</strong></a></li>
+					<li><a href="../stress/tips.html"><strong>5 Helpful Tips</strong></a></li>
+					<li><a href="../stress/meditate.html"><strong>Meditation</strong></a></li>
+					<li><a href="../stress/vipassana.html"><strong>Vipassana</strong></a></li>
+				</ul>
+			</li>
+			<li class="lastitem"><a href="index.html" class="current"><strong>Healthy Diets</strong></a>
+				<ul>
+					<li><a href="../diet/index.html"><strong>Why a Healthy Diet?</strong></a></li>
+					<li><a href="../diet/meals.html"><strong>Plan Your Meals</strong></a></li>
+					<li><a href="../diet/calories.html"><strong>Count Your Calories</strong></a></li>
+					<li><a href="../diet/bmi.html" class="current"><strong>Calculate Your BMI</strong></a></li>
+				</ul>
+			</li>	
+		</ul>
+	</nav> 
+
 	<main>
-	    <h1>Body Mass Index</h1>
-		<h2>Under Construction</h2>
+		<section>
+			<h2>What is a Body Mass Index?</h2>
+			<p>Body mass index (BMI) is a measure of a person's body fat based on
+				his or her height and weight. It can be used to determine if 
+				you are underweight, normal, overweight, or obese.</p>
+			<h3>Calculate your Body Mass Index</h3>
+			<p>Use the form that follows to calculate your BMI:</p>
+			<fieldset id="myform">
+				<legend>Enter your information</legend>
+				<label for="feet">Height:</label>
+				<input type="text" name="feet" id="feet"> ft.
+				<label for="inch"></label>
+				<input type="text" name="inch" id="inch"> in.<br>
+				<label for="weight">Weight:</label>
+				<input type="text" name="weight" id="weight"> lbs.<br>
+				<label for="bmi_result">BMI:</label>
+				<input type="text" name="bmi_result" id="bmi_result" readonly><br>
+				<input type="submit" id="calculate" value="Calculate">
+				<input type="reset" id="reset" value="Reset">
+			</fieldset>
+			<h3>What do my results mean? Health authorities agree that:</h3>
+			<ul>
+				<li>People with a BMI of less than 18.5 are underweight.</li>
+				<li>A BMI of between 18.5 and 25 is ideal.</li>
+				<li>People with a BMI between 25 and 30 are considered overweight.</li>
+				<li>People with a BMI over 30 are considered obese.</li>
+			</ul>
+
+		</section>
+		<aside>
+			<h2>Additional resources</h2>
+			<ul>
+				<li><a href="https://www.cdc.gov/physical-activity-basics/benefits/index.html"><strong>Physical Activity and Health</strong></a></li>
+				<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20546848"><strong>Stretching exercises</strong></a></li>
+				<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046031"><strong>Strength training</strong></a></li>
+				<li><a href="https://health.ucdavis.edu/blog/cultivating-health/simple-8-week-exercise-plan-for-a-healthy-heart/2024/02"><strong>Cardiovascular training</strong></a></li>
+				<li><a href="https://www.self.com/gallery/power-yoga-workout"><strong>Yoga workout</strong></a></li>
+			</ul>
+		</aside>
+
 	</main>
+	<footer>
+		<p>&copy; 2022 Shape Up!</p>
+	</footer>
+
 </body>
 </html>

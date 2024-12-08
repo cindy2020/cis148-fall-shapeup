@@ -1,15 +1,123 @@
 <!DOCTYPE html>
-
+<!-- Created by Cindy Ohara
+    CIS 148
+    December 4, 2024
+-->
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Shape Up! | Healthy Diet</title>
+	<link rel="icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../styles/diet.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="../js/image_swap.js"></script>
 </head>
 
 <body>
+	<header>
+		<a href="../index.html" title="Go to Home Page">
+			<img src="../images/shape_up_logo.png" alt="Shape Up logo">
+		</a>
+		<h1>Shape Up!</h1>
+		<h3>Find the best fit for you</h3>
+	</header>
+	<nav id="nav_menu">
+		<ul>
+			<li><a  href="../index.html"><strong>Home</strong></a></li>
+			<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046031"><strong>Strength training</strong></a></li>
+			<li><a href="https://health.ucdavis.edu/blog/cultivating-health/simple-8-week-exercise-plan-for-a-healthy-heart/2024/02"><strong>Cardio Exercises</strong></a></li>
+			<li><a href="../stress/index.html"><strong>Stress Relief</strong></a>
+				<ul>
+					<li><a href="../stress/index.html"><strong>What is Stress?</strong></a></li>
+					<li><a href="../stress/tips.html"><strong>5 Helpful Tips</strong></a></li>
+					<li><a href="../stress/meditate.html"><strong>Meditation</strong></a></li>
+					<li><a href="../stress/vipassana.html"><strong>Vipassana</strong></a></li>
+				</ul>
+			</li>
+			<li class="lastitem"><a href="index.html" class="current"><strong>Healthy Diets</strong></a>
+				<ul>
+					<li><a href="../diet/index.html" class="current"><strong>Why a Healthy Diet?</strong></a></li>
+					<li><a href="../diet/meals.html"><strong>Plan Your Meals</strong></a></li>
+					<li><a href="../diet/calories.html"><strong>Count Your Calories</strong></a></li>
+					<li><a href="../diet/bmi.html"><strong>Calculate Your BMI</strong></a></li>
+				</ul>
+			</li>	
+		</ul>
+	</nav> 
+
 	<main>
-	    <h1>Healthy Diet</h1>
-		<h2>Under Construction</h2>
+		<section>
+			<h2>Why a healthy diet is important</h2>
+			<p>Although exercise can help you lose body fat and tone muscles, 
+				it's also important to have a healthy diet. In the short term, 
+				a poor diet can contribute to stress, tiredness, and the capacity 
+				to work. Over time, it may add to the risk of developing some illnesses 
+				and health problems such as obesity, tooth decay, high blood pressure, 
+				high cholesterol, heart disease, some cancers, depression, osteoporosis, 
+				and type-2 diabetes. You've probably heard the old saying, "you are what 
+				you eat." So, to be in shape, you need to eat right.
+			</p>
+			<h3>What is a healthy diet?</h3>
+			<p>A healthy diet is more than eating a salad for lunch or buying
+				fat-free yogurt. A healthy diet is a balanced diet that gives your body
+				the nutrients it needs to function properly. And that means getting the 
+				majority of your daily calories from fresh fruits and vegetables, 
+				whole grains, legumes, nuts, and lean proteins.
+			</p>
+			<h3>When should you start?</h3>
+			<p>Right now! No matter how old you are, how you've eaten in the past, 
+				whether you exercise daily or almost never, the benefits of a healthy
+				diet begin today... if you start today!
+			</p>
+			<h3>Where can you find healthy food?</h3>
+			<p>Healthy food is available almost everywhere. You just have to plan ahead. 
+				Almost all restaurants and grocery stores offer healthy options nowadays. 
+				And, although it may be more expensive than unhealthy food, the extra 
+				money you spend on buying healthy food will be repaid many times over 
+				from a healthy life.
+			</p>
+			<h3>How to make healthier choices</h3>
+			<p>Click on an image to display a healthier choice.</p>
+			<ul id="image_list">
+				<li>
+					<a href="../images/food/breakfast_good.jpg" title="Good breakfast example">
+						<img src="../images/food/breakfast_bad.jpg" title="Bad breakfast">
+					</a>
+				</li>
+				<li>
+					<a href="../images/food/lunch_good.jpg" title="Good lunch example">
+						<img src="../images/food/lunch_bad.jpg" title="Bad lunch">
+					</a>
+				</li>
+				<li>
+					<a href="../images/food/dinner_good.jpg" title="Good dinner example">
+						<img src="../images/food/dinner_bad.jpg" title="Bad dinner">
+					</a>
+				</li>
+				<li>
+					<a href="../images/food/desert_good.jpg" title="Good dessert example">
+						<img src="../images/food/desert_bad.jpg" title="Bad dessert">
+					</a>
+				</li>
+			</ul>
+			<h3 id="caption">Healthy food</h3>
+			<p><img src="../images/food/healthy_food.jpg" id="image" title="Healthy food"></p>
+		</section>
+		<aside>
+			<h2>Additional resources</h2>
+			<ul>
+				<li><a href="https://www.cdc.gov/physical-activity-basics/benefits/index.html"><strong>Physical Activity and Health</strong></a></li>
+				<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20546848"><strong>Stretching exercises</strong></a></li>
+				<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/strength-training/art-20046031"><strong>Strength training</strong></a></li>
+				<li><a href="https://health.ucdavis.edu/blog/cultivating-health/simple-8-week-exercise-plan-for-a-healthy-heart/2024/02"><strong>Cardiovascular training</strong></a></li>
+				<li><a href="https://www.self.com/gallery/power-yoga-workout"><strong>Yoga workout</strong></a></li>
+			</ul>
+		</aside>
 	</main>
+
+	<footer>
+		<p>&copy; 2022 Shape Up!</p>
+	</footer>
+
 </body>
 </html>
